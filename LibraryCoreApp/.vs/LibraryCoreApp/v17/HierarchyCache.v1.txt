@@ -1,0 +1,298 @@
+﻿++Solution 'LibraryCoreApp' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:LibraryCoreApp.sln
+++LibraryCoreApp
+i:{00000000-0000-0000-0000-000000000000}:LibraryCoreApp
+++Connected Services 
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:>897
+++SQL Server Database
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:>918
+++Dependencies
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:>896
+++Analyzers
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:analyzers
+++Frameworks
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:frameworks
+++Packages
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:packages
+++Properties
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\properties\
+++launchSettings.json
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\properties\launchsettings.json
+++wwwroot
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\
+++Controllers
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\controllers\
+++HomeController.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\controllers\homecontroller.cs
+++Migrations
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\migrations\
+++Models
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\models\
+++Services
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\services\
+++Views
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\
+++Home
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\home\
+++Index.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\home\index.cshtml
+++Privacy.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\home\privacy.cshtml
+++Shared
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\shared\
+++_Layout.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\shared\_layout.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\shared\_validationscriptspartial.cshtml
+++Error.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\shared\error.cshtml
+++_ViewImports.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\_viewimports.cshtml
+++_ViewStart.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\_viewstart.cshtml
+++appsettings.json
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\appsettings.json
+++appsettings.Development.json
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\appsettings.development.json
+++Program.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\program.cs
+++SQL Server Database dependency is detected
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:>919
+++Microsoft.AspNetCore.Analyzers
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\users\limba\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.20\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\users\limba\.nuget\packages\microsoft.extensions.logging.abstractions\7.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\users\limba\.nuget\packages\system.text.json\7.0.0\analyzers\dotnet\roslyn4.0\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore.SqlServer (7.0.20)
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:>916
+++Microsoft.EntityFrameworkCore.Tools (7.0.20)
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:>917
+++css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\css\
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\
+++js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\js\
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\
+++favicon.ico
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\favicon.ico
+++20241024035906_InitialMigration.cs
+++AppDbContextModelSnapshot.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\migrations\appdbcontextmodelsnapshot.cs
+++AppDbContext.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\models\appdbcontext.cs
+++Books.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\models\books.cs
+++ErrorViewModel.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\models\errorviewmodel.cs
+++Transaction.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\models\transaction.cs
+++User.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\models\user.cs
+++IUserService.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\services\iuserservice.cs
+++UserService.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\services\userservice.cs
+++_Layout.cshtml.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\shared\_layout.cshtml.css
+++site.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\css\site.css
+++site.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\js\site.js
+++bootstrap
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\
+++jquery
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery\
+++jquery-validation
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation-unobtrusive\
+++20241024035906_InitialMigration.Designer.cs
+++dist
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery\dist\
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery\license.txt
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++jquery.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery\dist\jquery.js
+++additional-methods.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation\dist\additional-methods.js
+++jquery.validate.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+++jquery.validate.unobtrusive.min.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+++bootstrap.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+++bootstrap-grid.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+++bootstrap-reboot.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+++bootstrap-utilities.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+++bootstrap.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+++jquery.min.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery\dist\jquery.min.js
+++additional-methods.min.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+++jquery.validate.min.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+++bootstrap.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+++bootstrap.min.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+++bootstrap.rtl.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+++bootstrap-grid.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+++bootstrap-grid.min.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+++bootstrap-grid.rtl.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+++bootstrap-reboot.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+++bootstrap-reboot.min.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+++bootstrap-reboot.rtl.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+++bootstrap-utilities.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+++bootstrap-utilities.min.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+++bootstrap-utilities.rtl.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+++bootstrap.bundle.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+++bootstrap.esm.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+++bootstrap.js.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+++bootstrap.min.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\js\bootstrap.min.js
+++jquery.min.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\jquery\dist\jquery.min.map
+++bootstrap.min.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+++bootstrap.rtl.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+++bootstrap.rtl.min.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+++bootstrap-grid.min.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+++bootstrap-grid.rtl.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+++bootstrap-grid.rtl.min.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+++bootstrap-reboot.min.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+++bootstrap-reboot.rtl.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+++bootstrap-reboot.rtl.min.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+++bootstrap-utilities.min.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+++bootstrap-utilities.rtl.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+++bootstrap-utilities.rtl.min.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+++bootstrap.bundle.js.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+++bootstrap.bundle.min.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+++bootstrap.esm.js.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+++bootstrap.esm.min.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+++bootstrap.min.js.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+++bootstrap.rtl.min.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+++bootstrap-grid.rtl.min.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+++bootstrap-reboot.rtl.min.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+++bootstrap-utilities.rtl.min.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+++bootstrap.bundle.min.js.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+++bootstrap.esm.min.js.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+++_Layout - Copy.cshtml
+++_SiteLayout.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\shared\_sitelayout.cshtml
+++adminlte.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\js\adminlte.js
+++adminlte.js.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\js\adminlte.js.map
+++adminlte.css
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\css\adminlte.css
+++adminlte.css.map
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\css\adminlte.css.map
+++NewFolder
+++img
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\img\
+++user2-160x160.jpg
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\img\user2-160x160.jpg
+++overlayscrollbars.browser.es6.min.js
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\js\overlayscrollbars.browser.es6.min.js
+++AdminLTELogo.png
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\wwwroot\img\adminltelogo.png
+++20241026024026_Second.cs
+++20241026024026_Second.Designer.cs
+++Login
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\login\
+++Login.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\home\login.cshtml
+++Microsoft.AspNetCore.Session (2.2.0)
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:>1121
+++Register.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\home\register.cshtml
+++BooksController.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\controllers\bookscontroller.cs
+++BooksService.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\services\booksservice.cs
+++IBooksService.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\services\ibooksservice.cs
+++Books
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\books\
+++AddBook.cshtml
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\views\books\addbook.cshtml
+++20241027040935_Third.cs
+++20241027040935_Third.Designer.cs
+++20241027041150_InitialMigration.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\migrations\20241027041150_initialmigration.cs
+++20241027041150_InitialMigration.Designer.cs
+i:{a3c34da4-d824-4077-af14-3f349d6860c5}:c:\demo project\librarycoreapp\librarycoreapp\librarycoreapp\migrations\20241027041150_initialmigration.designer.cs

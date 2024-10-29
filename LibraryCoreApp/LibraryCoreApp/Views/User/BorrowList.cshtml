@@ -1,0 +1,46 @@
+﻿@model IEnumerable<LibraryCoreApp.Models.Transaction>
+
+@{
+    ViewBag.Title = "Borrow List";
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+
+<br />
+<h4>Received list</h4>
+<hr />
+<div class="col-6 offset-3">
+    @if (ViewBag.message != "")
+    {
+        <div class="form-group"><label class="small mb-1" style="color:red;">@ViewBag.message</label></div>
+    }
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6">
+
+                <div class="card" style="max-width: 18rem;">
+                    <div class="card-header">
+                        <i class="fas fa-book"></i>
+                        <span style="font-weight: bold">Book Title: </span>@Html.DisplayFor(modelItem => item.BookTitle)
+                    </div>
+                    <div class="card-body">                        
+                        <div>
+                            <h6 class="card-title" style="font-weight: bold">Received Date: </h6>
+                            <p class="card-text">
+                                @Html.DisplayFor(modelItem => item.TransDate)
+                            </p>
+                        </div>
+
+                        <p style="margin-left:10px"></p>
+                        <div class="btn btn-sm btn-danger" data-toggle='tooltip' title='Return book'>
+                            <i class="fas fa-eraser"></i>
+                            @Html.ActionLink("Return Book","ReturnBook", "User", new { TransId = @item.Id, style = "text-decoration:none; color: white" })
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+            </div>
+        }
+    </div>
+</div>

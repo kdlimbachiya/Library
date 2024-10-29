@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewData["Title"] = "ReturnList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>Return list</h4>
+<hr />
+<link rel="stylesheet" , href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+<link rel="stylesheet" , href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css" />
+<table width="100%" class="table table-hover table-bordered" id="example">
+    <thead class="bg-success text-light">
+        <tr>
+            <th>
+                Book Title
+            </th>            
+            <th>
+                Borrow Date
+            </th>
+            <th>
+                User Name
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>
+                bookTitle
+            </th>            
+            <th>
+                transDate
+            </th>
+            <th>
+                name
+            </th>
+        </tr>
+    </tbody>
+</table>
+<br />
+@section scripts{
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable( {
+                ajax: {
+                    url: '/Admin/AllReturnList',
+                    dataSrc: ''
+                },
+                columns: [
+                    { data: 'bookTitle' },
+                    { data: 'transDate' },
+                    { data: 'name' },                    
+                ],
+                'language': {
+                    'emptyTable': 'No data found.'
+                }
+            }); 
+        });        
+    </script>
+}
+
+
+

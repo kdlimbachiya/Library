@@ -1,0 +1,86 @@
+﻿@model LibraryCoreApp.Models.Books
+@{
+    ViewBag.Title = "Add Book";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h4>Add Book</h4>
+<hr />
+<br />
+
+<form asp-controller="Admin" asp-action="AddBook" method="post">
+    <div class="col-6 offset-3 card">
+    <br />
+    <div asp-validation-summary="ModelOnly"></div>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <p class="text-danger">@ViewBag.Message</p>
+    </div>
+    <div class="form-row form-group">
+        <div class="col">
+            @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "control-label" })
+            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control ", placeholder = "Book Title" } })
+            @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+        </div>
+        <div class="col">
+            @Html.LabelFor(model => model.Category, htmlAttributes: new { @class = "control-label" })
+            @Html.DropDownListFor(model => model.Category, new List<SelectListItem> {
+        new SelectListItem{ Text="Action", Value="Action"},
+        new SelectListItem{ Text="Drama", Value="Drama"},
+        new SelectListItem{ Text="Romance", Value="Romance"},
+        new SelectListItem{ Text="Fiction", Value="Fiction"},
+        new SelectListItem{ Text="Science", Value="Science"},
+        new SelectListItem{ Text="Horror", Value="Horror"},
+        }, "Select catagory", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Category, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-row form-group">
+        <div class="col">
+            @Html.LabelFor(model => model.Author, htmlAttributes: new { @class = "control-label" })
+            @Html.EditorFor(model => model.Author, new { htmlAttributes = new { @class = "form-control", placeholder = "Author" } })
+            @Html.ValidationMessageFor(model => model.Author, "", new { @class = "text-danger" })
+        </div>
+        <div class="col">
+            @Html.LabelFor(model => model.Copies, htmlAttributes: new { @class = "control-label" })
+            @Html.EditorFor(model => model.Copies, new { htmlAttributes = new { @class = "form-control", placeholder = "10" } })
+            @Html.ValidationMessageFor(model => model.Copies, "", new { @class = "text-danger" })
+        </div>
+    </div>
+    <div class="form-row form-group">
+        <div class="col">
+            @Html.LabelFor(model => model.Publication, htmlAttributes: new { @class = "control-label" })
+            @Html.EditorFor(model => model.Publication, new { htmlAttributes = new { @class = "form-control", placeholder = "Publication" } })
+            @Html.ValidationMessageFor(model => model.Publication, "", new { @class = "text-danger" })
+        </div><div class="col">
+            @Html.LabelFor(model => model.DateAdded, htmlAttributes: new { @class = "control-label" })
+            @Html.EditorFor(model => model.DateAdded, new { htmlAttributes = new { @class = "form-control datepicker", placeholder = "05/23/1983" } })
+            @Html.ValidationMessageFor(model => model.DateAdded, "", new { @class = "text-danger" })
+
+        </div>
+    </div>
+    <div class="form-group">
+
+        <button type="submit" value="Submit" class="btn btn-sm btn-block btn-danger">
+            <i class="fas fa-sign-in-alt"></i>
+            Submit
+        </button>
+    </div>
+</div>
+</form>
+<br />
+
+<div class="btn btn-sm btn-danger" data-toggle='tooltip' title='Back to book list'>
+    <i class="fas fa-long-arrow-alt-left"></i>
+    <a href="/Admin/Index">Back to book list</a>
+    @*@Html.ActionLink("Home", "Index", null, new { @class = "", @style = "text-decoration:none; color: white" })*@
+</div>
+<br />
+<br />
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+        $(function () {
+            $(".datepicker").datepicker({ changeMonth: true, changeYear: true });
+        });
+    </script>

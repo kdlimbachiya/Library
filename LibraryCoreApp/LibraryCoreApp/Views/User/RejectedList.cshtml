@@ -1,0 +1,35 @@
+﻿@model IEnumerable<LibraryCoreApp.Models.Transaction>
+@{
+    ViewData["Title"] = "RejectedList";
+    Layout = "~/Views/Shared/_SiteLayout.cshtml";
+}
+<br />
+<h4>Rejected list</h4>
+<hr />
+<div class="col-6 offset-3">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6">
+
+                <div class="card" style="max-width: 18rem;">
+                    <div class="card-header">
+                        <i class="fas fa-book"></i>
+                        <span style="font-weight:bold">Book Title: </span>@Html.DisplayFor(modelItem => item.BookTitle)
+                    </div>
+                    <div class="card-body">                        
+                        <div>
+                            <h6 class="card-title" style="font-weight:bold">Rejected Date: </h6>
+                            <p class="card-text">
+                                @Html.DisplayFor(modelItem => item.TransDate)
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+            </div>
+        }
+    </div>
+</div>
+
