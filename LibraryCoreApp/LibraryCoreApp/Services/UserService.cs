@@ -15,58 +15,42 @@ namespace LibraryCoreApp.Services
 
         public async Task<User> GetUser(int Id)
         {
-            User user = new User();
-            await Task.Run(() =>
-            {
-                user = _db.Users.FirstOrDefault(x => x.UserId == Id);
-            }); 
-            return user;
+            //User user = new User();
+            //await Task.Run(() =>
+            //{
+            //    user = _db.Users.FirstOrDefault(x => x.UserId == Id);
+            //}); 
+            return await _db.Users.SingleOrDefaultAsync(x => x.UserId == Id);
         }
         public async Task<User> GetUser(string Email, string Password)
         {
-            User user = new User();
-            await Task.Run(() =>
-            {
-                user = _db.Users.FirstOrDefault(x => x.Email == Email && x.Password == Password);
-            });
-            return user;
+            return await _db.Users.SingleOrDefaultAsync(x => x.Email == Email && x.Password == Password);
         }
         public async Task<List<User>> GetUsers()
         {
-            List<User> users = new List<User>();
-            await Task.Run(() =>
-            {
-                users = _db.Users.OrderByDescending(x => x.UserId).ToList();
-            });
-            return users;
+            return await _db.Users.OrderByDescending(x => x.UserId).ToListAsync();
         }
 
         public async Task<User> AddUser(User user)
         {
-            _db.Users.AddAsync(user);
-            _db.SaveChanges();
-            return user;
+            _db.Users.Add(user);
+            await _db.SaveChangesAsync();
+            return user;                
         }
 
         public async Task<User> UpdateUser(User user)
         {
-            await Task.Run(() =>
-            {
-                _db.Users.Update(user);
-                _db.SaveChanges();
-            });
+            _db.Entry(user).State = EntityState.Modified;
+            await _db.SaveChangesAsync();
             return user;
         }
         public async Task<bool> DeleteUser(int UserId)
         {
-            User user = _db.Users.FirstOrDefault(x => x.UserId == UserId);
+            User user = await _db.Users.FindAsync(UserId);
             if(user != null)
             {
-                await Task.Run(() =>
-                {
-                    _db.Users.Remove(user);
-                    _db.SaveChanges();
-                });                
+                _db.Users.Remove(user);
+                await _db.SaveChangesAsync();
                 return true;
             }
             return false;

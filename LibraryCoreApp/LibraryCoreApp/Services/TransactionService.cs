@@ -1,4 +1,5 @@
 ﻿using LibraryCoreApp.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryCoreApp.Services
 {
@@ -11,92 +12,56 @@ namespace LibraryCoreApp.Services
         }
         public async Task<List<Transaction>> GetRequestList()
         {
-            List<Transaction> transactions = new List<Transaction>();
-            await Task.Run(() =>
-            {
-                transactions = _db.Transactions.Where(y => y.IsRequested && y.Borrow == false && y.IsRejected == false && y.Return == false).OrderByDescending(x => x.Id).ToList();
-            });
-            return transactions;
+            return await _db.Transactions.Where(y => y.IsRequested && y.Borrow == false && y.IsRejected == false && y.Return == false).OrderByDescending(x => x.Id).ToListAsync(); 
         }
 
         public async Task<List<Transaction>> GetRequestList(int UserId)
         {
-            List<Transaction> transactions = new List<Transaction>();
-            await Task.Run(() =>
-            {
-                transactions = _db.Transactions.Where(y =>y.UserId == UserId && y.IsRequested && y.Borrow == false && y.IsRejected == false && y.Return == false).OrderByDescending(x => x.Id).ToList();
-            });
-            return transactions;
+            return await _db.Transactions.Where(y => y.UserId == UserId && y.IsRequested && y.Borrow == false && y.IsRejected == false && y.Return == false).OrderByDescending(x => x.Id).ToListAsync();
         }
 
         public async Task<List<Transaction>> GetRejectedList()
-        {
-            List<Transaction> transactions = new List<Transaction>();
-            await Task.Run(() =>
-            {
-                transactions = _db.Transactions.Where(y => y.IsRequested && y.IsRejected && y.Return == false).OrderByDescending(x => x.Id).ToList();
-            });
-            return transactions;
+        {           
+            return await _db.Transactions.Where(y => y.IsRequested && y.IsRejected && y.Return == false).OrderByDescending(x => x.Id).ToListAsync();
         }
         public async Task<List<Transaction>> GetRejectedList(int UserId)
         {
-            List<Transaction> transactions = new List<Transaction>();
-            await Task.Run(() =>
-            {
-                transactions = _db.Transactions.Where(y => y.UserId == UserId && y.IsRequested && y.IsRejected && y.Return == false).OrderByDescending(x => x.Id).ToList();
-            });
-            return transactions;
+            return await _db.Transactions.Where(y => y.UserId == UserId && y.IsRequested && y.IsRejected && y.Return == false).OrderByDescending(x => x.Id).ToListAsync();
         }
 
         public async Task<List<Transaction>> GetBorrowList()
         {
-            List<Transaction> transactions = new List<Transaction>();
-            await Task.Run(() =>
-            {
-                transactions = _db.Transactions.Where(y => y.Borrow && y.Return == false).OrderByDescending(x => x.Id).ToList();
-            });
-            return transactions;
+            return await _db.Transactions.Where(y => y.Borrow && y.Return == false).OrderByDescending(x => x.Id).ToListAsync();
         }
 
         public async Task<List<Transaction>> GetBorrowList(int UserId)
         {
-            List<Transaction> transactions = new List<Transaction>();
-            await Task.Run(() =>
-            {
-                transactions = _db.Transactions.Where(y => y.UserId == UserId && y.Borrow && y.Return == false).OrderByDescending(x => x.Id).ToList();
-            });
-            return transactions;
+            return await _db.Transactions.Where(y => y.UserId == UserId && y.Borrow && y.Return == false).OrderByDescending(x => x.Id).ToListAsync();
         }
 
         public async Task<Transaction> AcceptTrans(int TransId)
         {
-            Transaction transaction = _db.Transactions.Where(x => x.Id == TransId).FirstOrDefault();
+            Transaction transaction = await _db.Transactions.FindAsync(TransId);
             transaction.Borrow = true;
-            transaction.TransDate = DateTime.Now;
-            await Task.Run(() =>
-            {
-                _db.Transactions.Update(transaction);
-                _db.SaveChanges();
-            });
+            transaction.TransDate = DateTime.Now; 
+            _db.Transactions.Update(transaction);
+            await _db.SaveChangesAsync();
             return transaction;
         }
         public async Task<Transaction> RejectTrans(int TransId)
         {
-            Transaction transaction = _db.Transactions.Where(x => x.Id == TransId).FirstOrDefault();
+            Transaction transaction = await _db.Transactions.FindAsync(TransId);
             transaction.IsRejected = true;
             transaction.TransDate = DateTime.Now;
-            await Task.Run(() =>
-            {
-                _db.Transactions.Update(transaction);
-                _db.SaveChanges();
-            });
+            _db.Transactions.Update(transaction);
+            await _db.SaveChangesAsync();
             return transaction;
         }
 
         public async Task<Transaction> RequestBook(int BookId,int UserId)
         {
-            Books book = _db.BooksData.Where(x => x.Id == BookId).FirstOrDefault();
-            User user = _db.Users.Where(x => x.UserId == UserId).FirstOrDefault();
+            Books book = await _db.BooksData.FindAsync(BookId);
+            User user = await _db.Users.FindAsync(UserId);
             Transaction transaction = new Transaction();
             if (book != null && user != null)
             {
@@ -106,39 +71,28 @@ namespace LibraryCoreApp.Services
                 transaction.IsRequested = true;
                 transaction.Name= user.Name;
                 transaction.BookTitle = book.Title;
-                await Task.Run(() =>
-                {
-                    _db.Transactions.Update(transaction);
-                    _db.SaveChanges();
-                });
+                _db.Transactions.Add(transaction);
+                await _db.SaveChangesAsync();
             }
             return transaction;
         }
 
         public async Task<Transaction> ReturnBook(int TransId)
         {
-            Transaction transaction = _db.Transactions.Where(x => x.Id == TransId).FirstOrDefault();
+            Transaction transaction = await _db.Transactions.FindAsync(TransId);
             if (transaction != null)
             {
                 transaction.TransDate = DateTime.Now;
                 transaction.Return = true;
-                await Task.Run(() =>
-                {
-                    _db.Transactions.Update(transaction);
-                    _db.SaveChanges();
-                });
+                _db.Transactions.Update(transaction);
+                await _db.SaveChangesAsync();
             }
             return transaction;
         }
 
         public async Task<List<Transaction>> GetReturnList()
         {
-            List<Transaction> transactions = new List<Transaction>();
-            await Task.Run(() =>
-            {
-                transactions = _db.Transactions.Where(y => y.Return).OrderByDescending(x => x.Id).ToList();
-            });
-            return transactions;
+            return await _db.Transactions.Where(y => y.Return).OrderByDescending(x => x.Id).ToListAsync(); 
         }
     }
 }

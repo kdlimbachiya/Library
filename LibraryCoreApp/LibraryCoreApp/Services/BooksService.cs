@@ -1,4 +1,5 @@
 ﻿using LibraryCoreApp.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryCoreApp.Services
 {
@@ -12,54 +13,37 @@ namespace LibraryCoreApp.Services
         }
         public async Task<List<Books>> GetAllBooks()
         {
-            List<Books> books = new List<Books>();
-            await Task.Run(() =>
-            {
-                books = _db.BooksData.OrderByDescending(x => x.DateAdded).ToList();
-            });
-            return books;
+            return await _db.BooksData.OrderByDescending(x => x.DateAdded).ToListAsync();
         }
 
         public async Task<Books> GetBook(int BookId)
-        {
-            Books book = new Books();
-            await Task.Run(() =>
-            {
-                book = _db.BooksData.FirstOrDefault(x => x.Id == BookId);
-            });            
-            return book;
+        {         
+            return await _db.BooksData.FindAsync(BookId);
         }
         public async Task<Books> AddBook(Books book)
         {
-            await Task.Run(() =>
-            {
-                _db.BooksData.Add(book);
-                _db.SaveChanges();
-            });
+            _db.BooksData.Add(book);
+            await _db.SaveChangesAsync();
             return book;
         }
         public async Task<Books> UpdateBook(Books book)
         {
-            await Task.Run(() =>
-            {
-                _db.BooksData.Update(book);
-                _db.SaveChanges();
-            });            
+            //_db.BooksData.Update(book);
+            _db.Entry(book).State = EntityState.Modified;
+            await _db.SaveChangesAsync();
             return book;
         }
         public async Task<bool> DeleteBook(int BookId)
         {
-            Books book = _db.BooksData.FirstOrDefault(x => x.Id == BookId);
+            Books book = await _db.BooksData.SingleOrDefaultAsync(x => x.Id == BookId);
             if (book != null)
             {
-                var transactions = _db.Transactions.Where(x => x.BookId == BookId).ToList();
+                var transactions = await _db.Transactions.Where(x => x.BookId == BookId).ToListAsync();
                 if(transactions != null)
                 {
                     _db.Transactions.RemoveRange(transactions);
-                    _db.SaveChanges();
+                    await _db.SaveChangesAsync();
                 }
-                _db.BooksData.Remove(book);
-                _db.SaveChanges();
                 return true;
             }
             return false;

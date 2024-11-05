@@ -29,6 +29,8 @@ namespace LibraryCoreApp.Controllers
 
         public IActionResult Login(string message)
         {
+            if (!string.IsNullOrEmpty(message))
+                ViewBag.Message = message;
             return View();
         }
         [HttpPost]
@@ -39,7 +41,7 @@ namespace LibraryCoreApp.Controllers
                 string connectionString = _configuration["ConnectionStrings:DefaultConnection"];
                 using (var cn = new SqlConnection(connectionString))
                 {
-                    cn.Open();
+                    await cn.OpenAsync();
                     using (SqlCommand cm = cn.CreateCommand())
                     {
                         cm.CommandText = "UserLogin";
@@ -47,9 +49,9 @@ namespace LibraryCoreApp.Controllers
                         cm.Parameters.AddWithValue("@Email", user.Email);
                         cm.Parameters.AddWithValue("@Password", user.Password);
 
-                        using (SqlDataReader dr = cm.ExecuteReader())
+                        using (SqlDataReader dr = await cm.ExecuteReaderAsync())
                         {
-                            if (dr.Read())
+                            if (await dr.ReadAsync())
                             {
                                 user.UserId = dr.GetInt32(0);
                                 user.Name = dr.GetString(1);
@@ -85,27 +87,27 @@ namespace LibraryCoreApp.Controllers
                 throw;
             }
         }
-        public ActionResult Logout()
+        public IActionResult Logout()
         {
             HttpContext.Session.Remove("_UserId");
             HttpContext.Session.Remove("_IsAdmin");
             return RedirectToAction("Login", "Home");
         }
 
-        public ActionResult Register(string message)
+        public IActionResult Register(string message)
         {
             if(!string.IsNullOrEmpty(message))
                 ViewBag.Message = message;
             return View();
         }
         [HttpPost]
-        public ActionResult Register(User user)
+        public async Task<IActionResult> Register(User user)
         {
             if (!ModelState.IsValid)
             {
                 return RedirectToAction("Register", "Home", new { message = "Enter correct details to register." });
             }
-            _userService.AddUser(user);
+            await _userService.AddUser(user);
             return RedirectToAction("Login", "Home", new { message = "User registered successfully!" });
         }
     }
